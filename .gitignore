@@ -7,5 +7,7 @@ frontend/.vscode
 
 backend/target
 
+webapp/target
+
 
 .idea
