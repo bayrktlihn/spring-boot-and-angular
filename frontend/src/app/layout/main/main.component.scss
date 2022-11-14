@@ -1,0 +1,36 @@
+.main-container {
+  height: 100%;
+
+  .header {
+    color: #fff;
+    border-bottom: 1px solid #a0a0a0;
+    padding: 0.5rem;
+    background-color: #13183E;
+
+    .image {
+      img {
+        border-radius: 0.2rem;
+        background-color: white;
+        height: 75px;
+        width: 75px;
+      }
+    }
+
+    .name {
+      margin-left: 1rem;
+    }
+
+  }
+
+  .footer {
+    border-top: 1px solid #EEEEEE;
+    padding: 0.5rem;
+    background-color: #FAFAFA;
+  }
+
+  .main-content {
+    overflow-y: hidden;
+    height: 100%;
+  }
+
+}

@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+.container {
+
+  margin: 0 auto;
+
+  @media only screen and (max-width: 576px) {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 576px) {
+    width: 540px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 720px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    width: 960px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 1140px;
+  }
+
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

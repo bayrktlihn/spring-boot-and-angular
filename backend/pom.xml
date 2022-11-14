@@ -55,10 +55,10 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${project.build.directory}/classes/resources/${project.vpos.base-href}</outputDirectory>
+                            <outputDirectory>${project.build.directory}/classes/resources${project.base-href-full}</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>${project.parent.basedir}/frontend/dist/frontend/</directory>
+                                    <directory>${project.parent.basedir}/frontend/dist/</directory>
                                 </resource>
                             </resources>
                         </configuration>

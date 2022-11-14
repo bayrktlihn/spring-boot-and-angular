@@ -1,0 +1,26 @@
+<div class="main-container" fxLayout="column">
+  <div class="header">
+    <div class="container" fxLayout="row">
+      <div class="image">
+        <img />
+      </div>
+      <div fxFlex="auto" fxLayout="column" fxLayoutAlign="center" class="name">
+        Name
+      </div>
+    </div>
+  </div>
+
+  <div fxFlex="auto" class="main-content y-scroller">
+    <div class="y-scroller">
+      <div class="container" style="margin: 1rem auto;">
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container" fxLayout="row" fxLayoutAlign="center">
+      <app-footer></app-footer>
+    </div>
+  </div>
+</div>

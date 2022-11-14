@@ -17,8 +17,8 @@
   <build>
     <resources>
       <resource>
-        <directory>./dist/frontend</directory>
-        <targetPath>static</targetPath>
+        <directory>./dist</directory>
+        <targetPath>static${project.base-href-full}</targetPath>
       </resource>
     </resources>
     <plugins>
@@ -66,19 +66,13 @@
               <goal>npm</goal>
             </goals>
             <configuration>
-              <arguments>run build -- --base-href ${project.vpos.base-href}</arguments>
+              <arguments>run build -- --base-href ${project.base-href-full}</arguments>
             </configuration>
           </execution>
         </executions>
       </plugin>
     </plugins>
   </build>
-
-
-
-
-
-
 
 
 </project>

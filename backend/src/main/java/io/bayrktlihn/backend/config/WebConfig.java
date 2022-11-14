@@ -26,7 +26,7 @@ public class WebConfig implements WebMvcConfigurer {
                     @Override
                     protected Resource getResource(String resourcePath, Resource location) throws IOException {
                         Resource requestedResource = location.createRelative(resourcePath);
-                        return requestedResource.exists() && requestedResource.isReadable() ? requestedResource : new ClassPathResource("/static/" + projectContextPath + "/index.html");
+                        return requestedResource.exists() && requestedResource.isReadable() ? requestedResource : new ClassPathResource("/static" + projectContextPath + "index.html");
                     }
                 });
     }
